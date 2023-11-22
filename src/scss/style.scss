@@ -1,0 +1,101 @@
+//body
+body{
+    background-color: rgb(219, 235, 229);
+    box-sizing: border-box;
+}
+//header
+.header{
+    display: grid;
+    grid-template-columns: 10% 60% 30% ;
+    background-color: black;
+    color: aliceblue;
+    .header_logo{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 0.5rem;
+    }
+    .header_nav{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin: 0.3rem;
+        .nav_item{
+            .lineOne{
+                color: rgb(181, 182, 182);
+            }
+            .lineTwo{
+                font-weight: bolder;
+            }
+        }
+    }
+    .header_search{
+        margin-top: 0.3rem;
+        text-align: center;
+        .header_SearchIcon{
+            height: 50%;
+            width: 3%;
+            position: relative;
+            bottom: -0.45rem;
+            
+        }
+        .header_searchInput{
+            height: 40%;
+            width: 85%;
+        }
+    }
+}
+
+//home-page
+
+.item1 { grid-area: first; }
+.item2 { grid-area: second; }
+.item3 { grid-area: third; }
+.item4 { grid-area: forth; }
+.item5 { grid-area: fifth; }
+.item6 { grid-area: sixth; }
+
+.data{
+    display: grid;
+    grid-template-areas:
+    'first first first second second second'
+    'third third forth forth fifth fifth'
+    'sixth sixth sixth sixth sixth sixth';
+}
+.items{
+    background-color: aliceblue;
+    margin: 5px;
+    padding: 5px;
+}
+.btn-addToCart{
+    background-color: rgb(212, 105, 28);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 40%;
+    width: 7rem;
+}
+.item1 .btn-addToCart , .item2 .btn-addToCart{
+    margin-left: 40%;
+}
+.item6 .btn-addToCart{
+    margin-left: 45%;
+}
+//checkout page
+
+.checkout-nav{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin:1rem;
+}
+.right-content{
+    width: 100%;
+    margin-left: 0.5rem;
+}
+//basket-products
+.basket-products{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin: 0.5rem;
+    margin-left: 5%;
+    background-color: aliceblue ;
+    padding: 0.5rem;
+}
